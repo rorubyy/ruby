@@ -3644,7 +3644,7 @@ body {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
-    color: #212529;
+    color: #566777;
     /*   background-color: #212529; */
 }
 
@@ -3993,7 +3993,7 @@ small {
 .mark,
 mark {
     padding: .2em;
-   /* background-color: #fcf8e3*/
+    /* background-color: #fcf8e3*/
 }
 
 .list-unstyled {
@@ -8502,7 +8502,6 @@ tbody.collapse.show {
     -webkit-transition: width .6s ease;
     transition: width .6s ease
 }
-
 
 .progress-bar-striped {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);

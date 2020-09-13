@@ -1,8 +1,8 @@
 .index_step {
-    background: #295bbb -webkit-gradient(linear, left top, right top, from(#1e4da9), color-stop(84%, #295bbb));
-    background: #295bbb -webkit-linear-gradient(left, #1e4da9 0%, #295bbb 84%);
-    background: #295bbb -o-linear-gradient(left, #1e4da9 0%, #295bbb 84%);
-    background: #295bbb linear-gradient(90deg, #1e4da9 0%, #295bbb 84%)
+    background: #33418f -webkit-gradient(linear, left top, right top, from(#1e4da9), color-stop(84%, #71819e));
+    background: #33418f -webkit-linear-gradient(left, #1e4da9 0%, #71819e 84%);
+    background: #33418f -o-linear-gradient(left, #1e4da9 0%, #71819e 84%);
+    background: rgb(47, 70, 110) linear-gradient(90deg, rgb(47, 70, 110) 0%, rgb(47, 70, 110)84%)
 }
 
 .index_video_a .step_list {
