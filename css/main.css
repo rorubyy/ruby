@@ -259,11 +259,11 @@ a {
 
 a:hover {
     border-bottom-color: transparent;
-    color: #9bf1ff !important;
+    color: #898a8a !important;
 }
 
 a:active {
-    color: #53e3fb !important;
+    color: #898a8a !important;
 }
 
 strong,
@@ -1749,8 +1749,8 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #9bf1ff;
-    box-shadow: 0 0 0 2px #9bf1ff;
+    border-color: #898a8a;
+    box-shadow: 0 0 0 2px #767777;
 }
 
 select {
@@ -1849,14 +1849,14 @@ input[type="radio"]+label:before {
 input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
     background: #ffffff;
-    border-color: #9bf1ff;
+    border-color: #898a8a;
     content: '\f00c';
     color: #2f4661;
 }
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-    box-shadow: 0 0 0 2px #9bf1ff;
+    box-shadow: 0 0 0 2px #898a8a;
 }
 
 input[type="radio"]+label:before {
@@ -2215,7 +2215,7 @@ ul.pagination li>.page.active {
 }
 
 ul.pagination li>.page.active:hover {
-    background-color: #9bf1ff;
+    background-color: #898a8a;
     color: #2f4661 !important;
 }
 
@@ -2334,7 +2334,7 @@ button,
     display: inline-block;
     font-size: 0.8em;
     font-weight: 600;
-    height: 3.5em;
+    height: 3em;
     letter-spacing: 0.25em;
     line-height: 3.5em;
     padding: 0 1.75em;
@@ -2354,8 +2354,8 @@ button:hover,
 button:active,
 .button:hover,
 .button:active {
-    box-shadow: inset 0 0 0 2px #9bf1ff;
-    color: #9bf1ff;
+    box-shadow: inset 0 0 0 2px #898a8a;
+    color: #898a8a;
 }
 
 input[type="submit"]:active,
@@ -2364,7 +2364,7 @@ input[type="button"]:active,
 button:active,
 .button:active {
     background-color: rgba(155, 241, 255, 0.1);
-    box-shadow: inset 0 0 0 2px #53e3fb;
+    box-shadow: inset 0 0 0 2px #898a8a;
     color: #53e3fb;
 }
 
@@ -2499,7 +2499,7 @@ button.primary:hover,
 button.primary:active,
 .button.primary:hover,
 .button.primary:active {
-    background-color: #9bf1ff;
+    background-color: #898a8a;
     color: rgb(47, 70, 110) !important;
 }
 
@@ -2508,7 +2508,7 @@ input[type="reset"].primary:active,
 input[type="button"].primary:active,
 button.primary:active,
 .button.primary:active {
-    background-color: #53e3fb;
+    background-color: #898a8a;
 }
 
 input[type="submit"].disabled,
@@ -2642,37 +2642,6 @@ button:disabled,
     -ms-filter: blur(0.5em);
     filter: blur(0.5em);
     opacity: 0;
-}
-
-.tiles article:nth-child(4n - 1),
-.tiles article:nth-child(4n - 2) {
-    width: 50%;
-    /*遮罩大小*/
-}
-
-.tiles article:nth-child(6n - 5):before {
-    /*改遮罩顏色*/
-    background-color: #6fa1cf;
-}
-
-.tiles article:nth-child(6n - 4):before {
-    background-color: #b47cdd;
-}
-
-.tiles article:nth-child(6n - 3):before {
-    background-color: #e4a198;
-}
-
-.tiles article:nth-child(6n - 2):before {
-    background-color: #e6b98d;
-}
-
-.tiles article:nth-child(6n - 1):before {
-    background-color: #8aa4e0;
-}
-
-.tiles article:nth-child(6n):before {
-    background-color: #a1f3c7;
 }
 
 @media screen and (max-width: 1280px) {
@@ -2913,7 +2882,7 @@ button:disabled,
     display: -ms-flex;
     display: flex;
     background-color: #2a2f4a;
-    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0.25em 0 #000;
     cursor: default;
     font-weight: 600;
     height: 3.25em;
@@ -2951,11 +2920,11 @@ button:disabled,
 }
 
 #header .logo:hover strong {
-    background-color: #9bf1ff;
+    background-color: #898a8a;
 }
 
 #header .logo:active strong {
-    background-color: #53e3fb;
+    background-color: #898a8a;
 }
 
 #header nav {
@@ -3162,11 +3131,11 @@ body.is-preload #header.alt {
 /* Banner */
 
 #banner {
+    background-color: #0b2135;
     -moz-align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    background-image: url("../../images/banner.jpg");
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -3196,7 +3165,8 @@ body.is-preload #header.alt {
     -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
     pointer-events: none;
-    background-color: rgb(47, 70, 110);
+    background-color: #84aacc;
+    /*五隻羊後面背景顏色*/
     content: '';
     display: block;
     height: 100%;
