@@ -7447,7 +7447,7 @@
                     "stages": ["1000", "800", "1200", "1000"]
                 }, {
                     "name": "WIN the JACKPOT",
-                    "pic": "https://rorubyy.github.io/ruby/LN.png",
+                    "pic": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/15055668_1262163663836427_581226797275786729_n.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=qbGL1bDf59MAX8iU_RE&_nc_ht=scontent.frmq2-1.fna&oh=2f345b2d7036f45eba9d81449af33f03&oe=5F87077F",
                     "stages": ["1000", "1500", "2500", "3500"]
                 }]
             };
