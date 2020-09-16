@@ -6,6 +6,10 @@
 }
 
 .index_video_a .step_list {
+    visibility: visible;
+    animation-duration: 0.4s;
+    animation-delay: 0.1s;
+    animation-name: bounceIn_ease;
     list-style: none;
     padding-left: 0;
     font-size: 0;
