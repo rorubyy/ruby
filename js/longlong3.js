@@ -7434,20 +7434,20 @@
             },
             _Flourish_data = {
                 "horserace": [{
-                    "name": "AAPL",
-                    "pic": "https://rorubyy.github.io/ruby/RB.png",
+                    "name": "USER1",
+                    "pic": "https://i.imgur.com/Sxr4TF1.jpg",
                     "stages": ["1000", "2000", "2500", "800"]
                 }, {
-                    "name": "FB",
-                    "pic": "https://rorubyy.github.io/ruby/YY.png",
-                    "stages": ["1000", "1500", "1000", "1200"]
+                    "name": "USER2",
+                    "pic": "https://i.imgur.com/PmgFn8p.jpg",
+                    "stages": ["1000", "1500", "1000", "1500"]
                 }, {
-                    "name": "MCD",
-                    "pic": "https://rorubyy.github.io/ruby/BC.png",
-                    "stages": ["1000", "800", "1200", "1000"]
+                    "name": "USER3",
+                    "pic": "https://i.imgur.com/xZc3erK.jpg",
+                    "stages": ["1000", "800", "1200", "2000"]
                 }, {
                     "name": "WIN the JACKPOT",
-                    "pic": "https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/15055668_1262163663836427_581226797275786729_n.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=qbGL1bDf59MAX8iU_RE&_nc_ht=scontent.frmq2-1.fna&oh=2f345b2d7036f45eba9d81449af33f03&oe=5F87077F",
+                    "pic": "https://rorubyy.github.io/ruby/BC.png",
                     "stages": ["1000", "1500", "2500", "3500"]
                 }]
             };
