@@ -40,6 +40,12 @@
         })(window, document, 'script', 'dataLayer', 'GTM-NS27F8N');
     </script>
     <script src="dawho3.js"></script>
+    <script>
+        var name=getCookie("name");
+        console.log(name);
+
+        document.getElementById('name').innerHTML = name;
+    </script>
     <link rel="stylesheet" href="dawho2.css">
 </head>
 
@@ -48,11 +54,6 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NS27F8N" height="0" width="0"
             style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <script>
-        window.localStorage.getItem(googlename);
-        console.log(googlename);
-        document.getElementById('name').innerHTML = googlename;
-    </script>
     <div id="menu">
         <div class="container">
             <header class="head">
