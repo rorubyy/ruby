@@ -409,12 +409,14 @@
                         }
                     });
 
-                    window.setTimeout("window.location='https://rorubyy.github.io/ruby/dawho'", 3000);
+                    window.localStorage.setItem("googlename", profile.getName());
+                    console.log(profile.getName());
+                    window.setTimeout("window.location='https://jean870809.github.io/ruby/dawho.html'", 3000);
 
                     //window.location = 'https://rorubyy.github.io/ruby/dawho';
                     //alert("成功用Google帳號登入");
                     //alert("歡迎" + profile.getName() + "登入!");
-                    window.localStorage.setItem("googlename", profile.getName());
+
                     /*justify_notifyAPI();
                     justify_showMess(profile.getName());*/
 
