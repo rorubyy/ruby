@@ -350,6 +350,7 @@
                     // We need to register an Observer on Firebase Auth to make sure auth is initialized.
                     var unsubscribe = firebase.auth().onAuthStateChanged(function (firebaseUser) {
                         unsubscribe();
+                        console.log(firebaseUser);
                         // Check if we are already signed-in Firebase with the correct user.
 
                         if (!isUserEqual_GOOGLE(googleUser, firebaseUser)) {
