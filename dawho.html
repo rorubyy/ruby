@@ -40,26 +40,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-NS27F8N');
     </script>
     <script src="dawho3.js"></script>
-    <script>
-        function getCookie(cname)
-        {
-            var ss = document.cookie;
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0; i<ca.length; i++)
-            {
-                var c = ca[i].trim();
-                if (c.indexOf(name)==0)
-                    return c.substring(name.length,c.length);
-            }
-            return "";
-        }
-        var name=getCookie("name");
-
-        console.log(name);
-
-        document.getElementById('name').innerHTML = name;
-    </script>
+    
     <link rel="stylesheet" href="dawho2.css">
 </head>
 
@@ -81,7 +62,7 @@
                             class="menu_item" href="./faq/account/">News</a><a class="menu_item"
                             href="./how/prepare/">Game</a>
                         <a class="menu_item" href="./how/prepare/">Setting</a>
-                        <a class="btn_gold shadow menu_btn_gold" href="" target="_blank"><p id = "name"> ABC</p></a>
+                        <a class="btn_gold shadow menu_btn_gold" href="" target="_blank" id = "name"></a>
                     </nav>
                 </div>
             </header>
@@ -198,7 +179,26 @@
     <a class="shadow" id="fix_btn" href="">
         <target="_blank">智能<br>客服
     </a>
+    <script>
+        function getCookie(cname)
+        {
+            var ss = document.cookie;
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++)
+            {
+                var c = ca[i].trim();
+                if (c.indexOf(name)==0)
+                    return c.substring(name.length,c.length);
+            }
+            return "";
+        }
+        var name=getCookie("name");
 
+        console.log(name);
+
+        document.getElementById('name').innerHTML = name;
+    </script>
     <script src="dawho4.js"></script>
     <script src="dawho6.js"></script>
     <script src="dawho7.js"></script>
