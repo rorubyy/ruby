@@ -3,51 +3,68 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="testcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <div class="user-card round5">
-        <div class="login-box">
-            <form class="login-form" name="login" action="">
-                <input type="username" name="username" class="username" placeholder="username" />
-                <input type="password" name="password" class="password" placeholder="password" />
-                <input type="submit" name="login" value="Login" class="login" />
+
+    <div class="container-fluid loginbg">
+        <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 col-xs-12 login-box">
+            <div>
+                <p class="login-title text-center">Login to Win The Jackpot</p>
+                <img src="https://firebasestorage.googleapis.com/v0/b/test-f3031.appspot.com/o/%E6%AD%B7%E5%8F%B2%E7%BE%8A.jpg?alt=media&token=cc95d21d-7aed-472d-911f-1bdeda3ecc11" style="height: 30vh; width: 30vh; display:block; margin:auto;">
+            </div>
+            <div class="login-third-party-login">
+                <p class="login-button-info-text login-info-text text-center">EASILY USING</p>
+                <div class="login-button-container container-fluid">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button class="login-facebook login-button" onclick="FBLogin()">
+                            <span class="header-sprite login-fb-logo"></span>
+                            <!-- react-text: 78 -->FACEBOOK
+                            <!-- /react-text -->
+                        </button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button class="login-google login-button" id="gPlusLogin" onclick="GoogleLogin()">
+                            <span class="header-sprite login-gplus-logo"></span>
+                            <!-- react-text: 81 -->GOOGLE
+                            <!-- /react-text -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p class="login-info-text text-center">- OR USING EMAIL -</p>
+            <form class="login-login-form">
+                <fieldset class="login-input-container">
+                    <div class="login-input-item">
+                        <input type="email" class="login-user-input-email login-user-input" name="email"
+                            placeholder="Your Email Address">
+                    </div>
+                    <div class="login-input-item">
+                        <input type="password" class="login-user-input-password login-user-input" name="password"
+                            placeholder="Enter Password">
+                    </div>
+                </fieldset>
+                <fieldset class="login-login-button-container">
+                    <button class="login-login-button">Log in</button>
+                </fieldset>
             </form>
-
-            <div class="or"></div>
-
-
-            <a href="javascript: GoogleLogin()" class="login-with-google">
-                <span class="icon fa fa-google-plus"></span>
-                Login with google
-            </a>
-            <a href="javascript: FBLogin()" class="login-with-fb">
-                <span class="icon fa fa-facebook"></span>
-                Login with facebook
-            </a>
-
-
-        </div>
-        <div class="signup-box">
-            <form class="signup-form" name="signup" action="">
-                <input type="username" name="username" class="username" placeholder="username" />
-                <input type="email" name="email" class="email" placeholder="email" />
-                <input type="password" name="password" class="password" placeholder="password" />
-                <input type="password" name="confirm-password" class="confirm-password"
-                    placeholder="confirm-password" />
-                <input type="submit" name="signup" value="Signup" class="signup" />
-            </form>
-        </div>
-
-        <!-- Card Footer -->
-
-        <div class="footer">
-            <span>or </span><a class="toggle-link" href="#">Sign Up</a>
+            <div class="login-link-container">
+                <a class="login-link" href="#">Recover password</a>
+                <div class="login-right-links">
+                    <span class="login-info-text">New to Win The Jackpot?</span>
+                    <a class="login-create-account-link login-link" href="#">Create Account</a>
+                </div>
+            </div>
         </div>
     </div>
+
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
@@ -77,8 +94,6 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
-
-
     <script type="text/javascript">
         //應用程式編號，進入 https://developers.facebook.com/apps/ 即可看到
         let FB_appID = "633575047536520";
@@ -106,7 +121,6 @@
         };
 
         //使用自己客製化的按鈕來登入
-
         function FBLogin() {
 
             FB.login(function (response) {
@@ -164,7 +178,7 @@
                         //FB_justify_showMess(response.name);
                     });
                     // window.location = 'https://rorubyy.github.io/ruby/dawho';
-                    window.setTimeout("window.location='https://jean870809.github.io/ruby/dawho.html'", 2000);
+                    window.setTimeout("window.location='https://rorubyy.github.io/ruby/dawho'", 3000);
                     //alert("成功用Facebook帳號登入");
 
 
@@ -224,35 +238,6 @@
             return false;
         }
 
-        function FB_justify_notifyAPI() {
-            if (window.Notification) {
-                // 支援
-                console.log("支援Web Notifications API");
-            } else {
-                // 不支援
-                console.log("不支援Web Notifications API");
-            }
-        }
-        function FB_justify_showMess(username) {
-            if (window.Notification && Notification.permission !== "denied") {
-                Notification.requestPermission(function (status) {
-                    if (status === "granted") {
-                        var n = new Notification('Win The Jackpot', {
-                            body: username + '歡迎使用FB登入本系統',
-                            icon: "歷史羊.jpg"
-                        });
-                        n.onclick = function () {
-                            window.location = 'https://rorubyy.github.io/ruby/tmp';
-
-                        }
-                        // alert("Hi! this is the notifyMessages!");
-                    } else {
-                        var n = new Notification("baby! i will leave you!");
-                    }
-                });
-            }
-        }
-
     </script>
 
 
@@ -262,10 +247,8 @@
         onload="this.onload=function(){};HandleGoogleApiLibrary()"
         onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
     <script type="text/javascript">
-
         //進入 https://console.developers.google.com/，找「憑證」頁籤(記得先選對專案)，即可找到用戶端ID
         let Google_appId = "763216745915-386sefq7mqmlh99orn7bhbt290329402.apps.googleusercontent.com";
-        //let Google_appId = "763216745915-386sefq7mqmlh99orn7bhbt290329402.apps.googleusercontent.com";
 
 
         //參考文章：http://usefulangle.com/post/55/google-login-javascript-api 
@@ -297,7 +280,6 @@
                 }
             });
         }
-
         //cloud-messaging
         const messaging = firebase.messaging();
         messaging.usePublicVapidKey('BJZ0GlXbOZD_Xb0JTHZiLg9wlQN7HCwEd6q4VtdmROfL0vezkE3y8dmFztu3tbQ1rlE681RfzeVZbsVg3G0vQBk');
@@ -335,6 +317,7 @@
             //showToken('Error retrieving Instance ID token. ', err);
             //setTokenSentToServer(false);
         });
+
         function GoogleLogin() {
             // API call for Google login  
             gapi.auth2.getAuthInstance().signIn().then(
@@ -350,7 +333,6 @@
                     // We need to register an Observer on Firebase Auth to make sure auth is initialized.
                     var unsubscribe = firebase.auth().onAuthStateChanged(function (firebaseUser) {
                         unsubscribe();
-                        console.log(firebaseUser);
                         // Check if we are already signed-in Firebase with the correct user.
 
                         if (!isUserEqual_GOOGLE(googleUser, firebaseUser)) {
@@ -374,6 +356,7 @@
                                         token: userToken
                                     }
                                     firebase.database().ref('users/' + userId + '/').update(postData);
+                                    firebase.database().ref('userID/').update({ userID: userId });
 
                                 }
                             });
@@ -409,19 +392,9 @@
                         }
                     });
 
-                    //window.localStorage.setItem("googlename", profile.getName());
-                    //console.log(profile.getName());
-                    document.cookie = "name="+ profile.getName();
+                    window.localStorage.setItem("googlename", profile.getName());
+                    console.log(profile.getName());
                     window.setTimeout("window.location='https://jean870809.github.io/ruby/dawho.html'", 3000);
-
-                    //window.location = 'https://rorubyy.github.io/ruby/dawho';
-                    //alert("成功用Google帳號登入");
-                    //alert("歡迎" + profile.getName() + "登入!");
-
-                    /*justify_notifyAPI();
-                    justify_showMess(profile.getName());*/
-
-
                 },
                 function (error) {
                     // Error occurred
@@ -429,6 +402,7 @@
                     console.log(error);
                 }
             );
+
         }
         function isUserEqual_GOOGLE(googleUser, firebaseUser) {
             if (firebaseUser) {
@@ -442,34 +416,6 @@
                 }
             }
             return false;
-        }
-        function justify_notifyAPI() {
-            if (window.Notification) {
-                // 支援
-                console.log("支援Web Notifications API");
-            } else {
-                // 不支援
-                console.log("不支援Web Notifications API");
-            }
-        }
-        function justify_showMess(username) {
-            if (window.Notification && Notification.permission !== "denied") {
-                Notification.requestPermission(function (status) {
-                    if (status === "granted") {
-                        var n = new Notification('Win The Jackpot', {
-                            body: username + '歡迎使用Google登入本系統',
-                            icon: "歷史羊.jpg"
-                        });
-                        n.onclick = function () {
-                            window.location = 'https://rorubyy.github.io/ruby/tmp';
-
-                        }
-                        // alert("Hi! this is the notifyMessages!");
-                    } else {
-                        var n = new Notification("baby! i will leave you!");
-                    }
-                });
-            }
         }
 
 
@@ -519,40 +465,6 @@
 
 
     </script>
-    <script>$(document).ready(function () {
-
-            /* Login & Signup Toggle */
-
-            var cardToggle = 0;
-
-
-
-            $('.toggle-link').on('click', function (event) {
-                event.preventDefault();
-                if (cardToggle == 0) {
-                    $(this).text('Login');
-                    $('.login-box').animate({
-                        right: '350px'
-                    });
-                    $('.signup-box').animate({
-                        right: '0'
-                    });
-
-                    cardToggle = 1;
-
-                } else {
-                    $(this).text('Signup');
-                    $('.login-box').animate({
-                        right: '0'
-                    });
-                    $('.signup-box').animate({
-                        right: '-350px'
-                    });
-
-                    cardToggle = 0;
-                }
-            })
-        })</script>
 
 </body>
 
