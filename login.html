@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
     <title>Win The Jackpot </title>
 </head>
 
@@ -355,7 +357,6 @@
                                         token: userToken
                                     }
                                     firebase.database().ref('users/' + userId + '/').update(postData);
-                                    firebase.database().ref('userID/').update({ userID: userId });
 
                                 }
                             });
@@ -391,7 +392,8 @@
                         }
                     });
 
-                    window.localStorage.setItem("googlename", profile.getName());
+                    //window.localStorage.setItem("googlename", profile.getName());
+                    $.cookie('googlename',profile.getName());
                     console.log(profile.getName());
                     window.setTimeout("window.location='https://jean870809.github.io/ruby/index.html'", 3000);
                 },
