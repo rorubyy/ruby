@@ -57,11 +57,12 @@
                     <a class="logo_a" href="./"><img class="logo" src="image1.png"></a>
                     <a class="btn_label">
                         <label class="label_block" for="control_menu"></label></a>
-                    <nav class="nav"><a class="menu_item" href="https://jean870809.github.io/ruby/index.html">Home</a><a
-                            class="menu_item" href="https://ceciliehsu.github.io/html5up-forty/market.html">Market</a>
-                        <a class="menu_item" href="https://alvintang0925.github.io/fortyweb/qts.html">Watchlist</a><a
-                            class="menu_item" href="./faq/account/">News</a><a class="menu_item"
-                            href="https://becks9908.github.io/myweb/tablee.html">Game</a>
+                    <nav class="nav">
+                        <a class="menu_item" href="https://jean870809.github.io/ruby/index.html">Home</a>
+                        <a class="menu_item" href="https://ceciliehsu.github.io/html5up-forty/market.html">Market</a>
+                        <a class="menu_item" href="https://alvintang0925.github.io/fortyweb/ruby_qts.html">QTS</a>
+                        <a class="menu_item" href="https://ceciliehsu.github.io/html5up-forty/news.html">News</a>
+                        <a class="menu_item" href="https://becks9908.github.io/myweb/ruby_card.html">Game</a>
                         <a class="menu_item" href="./how/prepare/">Setting</a>
                         <a class="btn_gold shadow menu_btn_gold" href="login.html" id="name">登入</a>
                     </nav>
@@ -199,12 +200,13 @@
         }
     </script> -->
     <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script>
         var name = $.cookie('googlename')
         console.log(name);
-        if(name != 'undefined'){
-            document.getElementById('name').innerHTML = name; 
+        if (name != 'undefined') {
+            document.getElementById('name').innerHTML = name;
             document.getElementById('name').setAttribute("href", "javascript: void(0)");
         }
     </script>
